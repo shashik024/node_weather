@@ -1,0 +1,56 @@
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.headerTitle {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 250px;
+}
+
+footer {
+  color: rgb(97, 76, 48);
+  border-top: dimgrey 2px solid;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+header a {
+  font-size: 20px;
+  text-decoration: none;
+  color: lightslategray;
+  margin-right: 16px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
