@@ -29,7 +29,7 @@ weatherForm.addEventListener("submit", (e) => {
           errorLine.textContent = data.error;
         } else {
           weatherLive.textContent = data.location + " " + data.forecast;
-          // console.log(data.forecast);
+          search.value = " ";
         }
       });
     }
