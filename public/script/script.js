@@ -22,16 +22,16 @@ weatherForm.addEventListener("submit", (e) => {
 
   // console.log(location);
 
-  const fetchedWhetherData = fetch(
-    "http://localhost:3000/whether?address=" + location
-  ).then((response) => {
-    response.json().then((data) => {
-      if (data.error) {
-        errorLine.textContent = data.error;
-      } else {
-        weatherLive.textContent = data.location + " " + data.forecast;
-        // console.log(data.forecast);
-      }
-    });
-  });
+  const fetchedWhetherData = fetch("/whether?address=" + location).then(
+    (response) => {
+      response.json().then((data) => {
+        if (data.error) {
+          errorLine.textContent = data.error;
+        } else {
+          weatherLive.textContent = data.location + " " + data.forecast;
+          // console.log(data.forecast);
+        }
+      });
+    }
+  );
 });

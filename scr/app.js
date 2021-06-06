@@ -49,7 +49,7 @@ app.use(express.static(publicDirPath));
 //     },
 //   ]);
 // });
-
+const port =process.env.PORT || 3000
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weathery App",
@@ -138,6 +138,6 @@ app.get("*", (req, res) => {
 //   })
 //   .listen(8080);
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Working");
 });
