@@ -1,5 +1,7 @@
 body {
   color: #333333;
+  background-image: url("weather.jpg");
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 650px;
   margin: 0 auto;

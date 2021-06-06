@@ -49,10 +49,10 @@ app.use(express.static(publicDirPath));
 //     },
 //   ]);
 // });
-const port =process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weathery App",
+    title: "Mosameee",
     name: "shashi kant",
   });
 });
@@ -60,7 +60,7 @@ app.get("", (req, res) => {
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    helpTitle: "Happy to Help",
+    helpTitle: "Kindly Write me :  ",
     name: "shashi kant",
   });
 });
@@ -69,7 +69,8 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
     name: "shashi kant",
-    aboutTitle: " We are creater of this web app",
+    aboutTitle:
+      " This App created by Shashi Kant , It uses data from www.mapbox.com",
   });
 });
 
