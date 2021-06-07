@@ -11,7 +11,9 @@ const whetherinfo = (lat, long, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]} . It is currently ${body.current.temperature} degree out  . It feels like ${body.current.feelslike} degree .`
+        `${body.current.weather_descriptions[0]} . It is currently ${body.current.temperature} degree out  . It feels like ${body.current.feelslike} degree .
+
+        Humadity is ${body.current.humidity} %`
       );
     }
   });
